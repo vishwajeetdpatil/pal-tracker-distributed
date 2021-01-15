@@ -1,0 +1,792 @@
+ubuntu@ip-172-31-19-163:~$ cf logs pal-tracker
+Retrieving logs for app pal-tracker in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+   2021-01-12T04:57:59.40+0000 [CELL/SSHD/0] OUT Exit status 0
+   2021-01-12T04:57:59.44+0000 [APP/PROC/WEB/0] OUT 2021-01-12 04:57:59.438  INFO 21 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2021-01-12T04:57:59.64+0000 [APP/PROC/WEB/0] OUT Exit status 143
+   2021-01-12T04:57:59.65+0000 [CELL/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance d911efa3-137b-4959-4b1d-2be4
+   2021-01-12T04:57:59.84+0000 [PROXY/0] OUT Exit status 137
+   2021-01-12T04:58:00.16+0000 [CELL/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance d911efa3-137b-4959-4b1d-2be4
+   2021-01-12T05:00:54.13+0000 [API/0] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"buildpack"=>"", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"pal-tracker", "space_guid"=>"6b016f44-e49c-4a14-822e-02370a143be0"})
+   2021-01-12T05:00:55.16+0000 [API/0] OUT Uploading bits for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:01:02.19+0000 [API/0] OUT Creating build for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:01:02.85+0000 [API/0] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"state"=>"STARTED"})
+   2021-01-12T05:01:02.87+0000 [STG/0] OUT Downloading binary_buildpack...
+   2021-01-12T05:01:02.87+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-12T05:01:02.87+0000 [STG/0] OUT Downloading ruby_buildpack...
+   2021-01-12T05:01:02.87+0000 [STG/0] OUT Downloading java_buildpack_offline...
+   2021-01-12T05:01:02.88+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2021-01-12T05:01:02.90+0000 [STG/0] OUT Downloaded ruby_buildpack
+   2021-01-12T05:01:02.90+0000 [STG/0] OUT Downloading go_buildpack...
+   2021-01-12T05:01:02.91+0000 [STG/0] OUT Downloaded binary_buildpack
+   2021-01-12T05:01:02.91+0000 [STG/0] OUT Downloading r_buildpack...
+   2021-01-12T05:01:02.92+0000 [STG/0] OUT Downloaded java_buildpack_offline
+   2021-01-12T05:01:02.92+0000 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2021-01-12T05:01:02.93+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-12T05:01:02.93+0000 [STG/0] OUT Downloading php_buildpack...
+   2021-01-12T05:01:02.94+0000 [STG/0] OUT Downloaded go_buildpack
+   2021-01-12T05:01:02.94+0000 [STG/0] OUT Downloading dotnet_core_buildpack_old...
+   2021-01-12T05:01:02.95+0000 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2021-01-12T05:01:02.95+0000 [STG/0] OUT Downloading python_buildpack...
+   2021-01-12T05:01:02.95+0000 [STG/0] OUT Downloaded r_buildpack
+   2021-01-12T05:01:02.95+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2021-01-12T05:01:02.97+0000 [STG/0] OUT Downloaded php_buildpack
+   2021-01-12T05:01:02.97+0000 [STG/0] OUT Downloaded dotnet_core_buildpack_old
+   2021-01-12T05:01:02.98+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2021-01-12T05:01:02.99+0000 [STG/0] OUT Downloaded python_buildpack
+   2021-01-12T05:01:02.99+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2021-01-12T05:01:02.99+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   2021-01-12T05:01:03.53+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   2021-01-12T05:01:04.02+0000 [STG/0] OUT Downloading app package...
+   2021-01-12T05:01:04.02+0000 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-12T05:01:04.10+0000 [STG/0] OUT Downloaded build artifacts cache (131B)
+   2021-01-12T05:01:04.79+0000 [STG/0] OUT Downloaded app package (16.3M)
+   2021-01-12T05:01:05.99+0000 [STG/0] ERR None of the buildpacks detected a compatible application
+   2021-01-12T05:01:06.00+0000 [STG/0] OUT Exit status 222
+   2021-01-12T05:01:06.12+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   2021-01-12T05:01:06.12+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   2021-01-12T05:01:06.22+0000 [API/1] ERR Failed to stage build: staging failed
+   2021-01-12T05:01:06.48+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance c4be9c2b-8536-4a37-8a9f-fcb249adcb03
+   2021-01-12T05:03:29.58+0000 [API/0] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"environment_json"=>"[PRIVATE DATA HIDDEN]"})
+   2021-01-12T05:03:52.69+0000 [API/0] OUT Creating build for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:03:53.37+0000 [STG/0] OUT Downloading binary_buildpack...
+   2021-01-12T05:03:53.37+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-12T05:03:53.37+0000 [STG/0] OUT Downloading go_buildpack...
+   2021-01-12T05:03:53.37+0000 [STG/0] OUT Downloading java_buildpack_offline...
+   2021-01-12T05:03:53.37+0000 [STG/0] OUT Downloading python_buildpack...
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloaded binary_buildpack
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloaded go_buildpack
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloading php_buildpack...
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloaded python_buildpack
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloading r_buildpack...
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloaded java_buildpack_offline
+   2021-01-12T05:03:53.40+0000 [STG/0] OUT Downloading ruby_buildpack...
+   2021-01-12T05:03:53.43+0000 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2021-01-12T05:03:53.44+0000 [STG/0] OUT Downloaded r_buildpack
+   2021-01-12T05:03:53.44+0000 [STG/0] OUT Downloading dotnet_core_buildpack_old...
+   2021-01-12T05:03:53.44+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2021-01-12T05:03:53.44+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-12T05:03:53.44+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2021-01-12T05:03:53.45+0000 [STG/0] OUT Downloaded php_buildpack
+   2021-01-12T05:03:53.45+0000 [STG/0] OUT Downloaded ruby_buildpack
+   2021-01-12T05:03:53.47+0000 [STG/0] OUT Downloaded dotnet_core_buildpack_old
+   2021-01-12T05:03:53.47+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2021-01-12T05:03:53.47+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2021-01-12T05:03:53.47+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   2021-01-12T05:03:54.05+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   2021-01-12T05:03:54.49+0000 [STG/0] OUT Downloading app package...
+   2021-01-12T05:03:54.49+0000 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-12T05:03:54.58+0000 [STG/0] OUT Downloaded build artifacts cache (131B)
+   2021-01-12T05:03:55.47+0000 [STG/0] OUT Downloaded app package (16.3M)
+   2021-01-12T05:03:56.69+0000 [STG/0] ERR None of the buildpacks detected a compatible application
+   2021-01-12T05:03:56.70+0000 [STG/0] OUT Exit status 222
+   2021-01-12T05:03:57.32+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   2021-01-12T05:03:57.32+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   2021-01-12T05:03:57.42+0000 [API/1] ERR Failed to stage build: staging failed
+   2021-01-12T05:03:57.70+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance d2e342a0-6c35-4908-a5a8-8629d5f7626a
+   2021-01-12T05:05:45.19+0000 [API/0] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"buildpack"=>"", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"pal-tracker", "space_guid"=>"6b016f44-e49c-4a14-822e-02370a143be0"})
+   2021-01-12T05:05:46.26+0000 [API/1] OUT Uploading bits for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:05:53.29+0000 [API/1] OUT Creating build for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:05:53.84+0000 [API/1] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"state"=>"STARTED"})
+   2021-01-12T05:05:53.85+0000 [STG/0] OUT Downloading binary_buildpack...
+   2021-01-12T05:05:53.85+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-12T05:05:53.85+0000 [STG/0] OUT Downloading java_buildpack_offline...
+   2021-01-12T05:05:53.85+0000 [STG/0] OUT Downloading python_buildpack...
+   2021-01-12T05:05:53.86+0000 [STG/0] OUT Downloading go_buildpack...
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloading r_buildpack...
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloaded binary_buildpack
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloaded python_buildpack
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloaded java_buildpack_offline
+   2021-01-12T05:05:53.89+0000 [STG/0] OUT Downloading php_buildpack...
+   2021-01-12T05:05:53.91+0000 [STG/0] OUT Downloaded go_buildpack
+   2021-01-12T05:05:53.91+0000 [STG/0] OUT Downloading ruby_buildpack...
+   2021-01-12T05:05:53.92+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2021-01-12T05:05:53.92+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2021-01-12T05:05:53.92+0000 [STG/0] OUT Downloaded php_buildpack
+   2021-01-12T05:05:53.92+0000 [STG/0] OUT Downloaded r_buildpack
+   2021-01-12T05:05:53.92+0000 [STG/0] OUT Downloading dotnet_core_buildpack_old...
+   2021-01-12T05:05:53.93+0000 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2021-01-12T05:05:53.94+0000 [STG/0] OUT Downloaded ruby_buildpack
+   2021-01-12T05:05:53.95+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2021-01-12T05:05:53.95+0000 [STG/0] OUT Downloaded dotnet_core_buildpack_old
+   2021-01-12T05:05:53.95+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   2021-01-12T05:05:54.43+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   2021-01-12T05:05:54.81+0000 [STG/0] OUT Downloading app package...
+   2021-01-12T05:05:54.81+0000 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-12T05:05:54.90+0000 [STG/0] OUT Downloaded build artifacts cache (131B)
+   2021-01-12T05:05:55.41+0000 [STG/0] OUT Downloaded app package (16.3M)
+   2021-01-12T05:05:56.66+0000 [STG/0] ERR None of the buildpacks detected a compatible application
+   2021-01-12T05:05:56.67+0000 [STG/0] OUT Exit status 222
+   2021-01-12T05:05:57.19+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   2021-01-12T05:05:57.19+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   2021-01-12T05:05:57.29+0000 [API/0] ERR Failed to stage build: staging failed
+   2021-01-12T05:05:57.45+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance 02ff1306-c19d-4d4d-975c-825c0cf0d9dc
+   2021-01-12T05:07:48.96+0000 [API/0] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"buildpack"=>"", "disk_quota"=>1024, "environment_json"=>"[PRIVATE DATA HIDDEN]", "health_check_http_endpoint"=>"", "health_check_type"=>"port", "instances"=>1, "memory"=>1024, "name"=>"pal-tracker", "space_guid"=>"6b016f44-e49c-4a14-822e-02370a143be0"})
+   2021-01-12T05:07:50.93+0000 [API/0] OUT Uploading bits for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:07:57.91+0000 [API/1] OUT Creating build for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:07:58.49+0000 [API/1] OUT Updated app with guid fb8c6340-5b33-4959-85b9-82edc26199fd ({"state"=>"STARTED"})
+   2021-01-12T05:07:58.53+0000 [STG/0] OUT Downloading binary_buildpack...
+   2021-01-12T05:07:58.53+0000 [STG/0] OUT Downloading nodejs_buildpack...
+   2021-01-12T05:07:58.53+0000 [STG/0] OUT Downloading python_buildpack...
+   2021-01-12T05:07:58.53+0000 [STG/0] OUT Downloading go_buildpack...
+   2021-01-12T05:07:58.53+0000 [STG/0] OUT Downloading dotnet_core_buildpack...
+   2021-01-12T05:07:58.56+0000 [STG/0] OUT Downloaded dotnet_core_buildpack
+   2021-01-12T05:07:58.56+0000 [STG/0] OUT Downloading dotnet_core_buildpack_old...
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloaded go_buildpack
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloading php_buildpack...
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloaded python_buildpack
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloaded nodejs_buildpack
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloading staticfile_buildpack...
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloaded binary_buildpack
+   2021-01-12T05:07:58.57+0000 [STG/0] OUT Downloading ruby_buildpack...
+   2021-01-12T05:07:58.58+0000 [STG/0] OUT Downloading nginx_buildpack...
+   2021-01-12T05:07:58.60+0000 [STG/0] OUT Downloaded dotnet_core_buildpack_old
+   2021-01-12T05:07:58.60+0000 [STG/0] OUT Downloading java_buildpack_offline...
+   2021-01-12T05:07:58.61+0000 [STG/0] OUT Downloaded php_buildpack
+   2021-01-12T05:07:58.61+0000 [STG/0] OUT Downloading r_buildpack...
+   2021-01-12T05:07:58.62+0000 [STG/0] OUT Downloaded nginx_buildpack
+   2021-01-12T05:07:58.62+0000 [STG/0] OUT Downloaded staticfile_buildpack
+   2021-01-12T05:07:58.63+0000 [STG/0] OUT Downloaded java_buildpack_offline
+   2021-01-12T05:07:58.65+0000 [STG/0] OUT Downloaded ruby_buildpack
+   2021-01-12T05:07:58.65+0000 [STG/0] OUT Downloaded r_buildpack
+   2021-01-12T05:07:58.65+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 creating container for instance a625a11b-194e-427a-870f-02fc22c54805
+   2021-01-12T05:07:59.23+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully created container for instance a625a11b-194e-427a-870f-02fc22c54805
+   2021-01-12T05:07:59.60+0000 [STG/0] OUT Downloading app package...
+   2021-01-12T05:07:59.60+0000 [STG/0] OUT Downloading build artifacts cache...
+   2021-01-12T05:07:59.67+0000 [STG/0] OUT Downloaded build artifacts cache (131B)
+   2021-01-12T05:08:00.12+0000 [STG/0] OUT Downloaded app package (15M)
+   2021-01-12T05:08:02.00+0000 [STG/0] OUT -----> Java Buildpack v4.34 (offline) | https://github.com/cloudfoundry/java-buildpack.git#04543c2
+   2021-01-12T05:08:02.06+0000 [STG/0] OUT -----> Downloading Jvmkill Agent 1.16.0_RELEASE from https://java-buildpack.cloudfoundry.org/jvmkill/bionic/x86_64/jvmkill-1.16.0-RELEASE.so (found in cache)
+   2021-01-12T05:08:02.06+0000 [STG/0] OUT -----> Downloading Open Jdk JRE 11.0.9_11 from https://java-buildpack.cloudfoundry.org/openjdk/bionic/x86_64/bellsoft-jre11.0.9%2B11-linux-amd64.tar.gz (found in cache)
+   2021-01-12T05:08:03.44+0000 [STG/0] OUT        Expanding Open Jdk JRE to .java-buildpack/open_jdk_jre (1.3s)
+   2021-01-12T05:08:03.44+0000 [STG/0] OUT        JVM DNS caching disabled in lieu of BOSH DNS caching
+   2021-01-12T05:08:03.44+0000 [STG/0] OUT -----> Downloading Open JDK Like Memory Calculator 3.13.0_RELEASE from https://java-buildpack.cloudfoundry.org/memory-calculator/bionic/x86_64/memory-calculator-3.13.0-RELEASE.tar.gz (found in cache)
+   2021-01-12T05:08:03.76+0000 [STG/0] OUT        Loaded Classes: 18555, Threads: 250
+   2021-01-12T05:08:03.77+0000 [STG/0] OUT -----> Downloading Client Certificate Mapper 1.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/client-certificate-mapper/client-certificate-mapper-1.11.0-RELEASE.jar (found in cache)
+   2021-01-12T05:08:03.77+0000 [STG/0] OUT -----> Downloading Container Security Provider 1.18.0_RELEASE from https://java-buildpack.cloudfoundry.org/container-security-provider/container-security-provider-1.18.0-RELEASE.jar (found in cache)
+   2021-01-12T05:08:03.77+0000 [STG/0] OUT -----> Downloading Spring Auto Reconfiguration 2.11.0_RELEASE from https://java-buildpack.cloudfoundry.org/auto-reconfiguration/auto-reconfiguration-2.11.0-RELEASE.jar (found in cache)
+   2021-01-12T05:08:13.80+0000 [STG/0] OUT Exit status 0
+   2021-01-12T05:08:13.80+0000 [STG/0] OUT Uploading droplet, build artifacts cache...
+   2021-01-12T05:08:13.80+0000 [STG/0] OUT Uploading droplet...
+   2021-01-12T05:08:13.80+0000 [STG/0] OUT Uploading build artifacts cache...
+   2021-01-12T05:08:13.86+0000 [STG/0] OUT Uploaded build artifacts cache (131B)
+   2021-01-12T05:08:14.66+0000 [API/1] OUT Creating droplet for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:08:16.85+0000 [STG/0] OUT Uploaded droplet (64.1M)
+   2021-01-12T05:08:16.86+0000 [STG/0] OUT Uploading complete
+   2021-01-12T05:08:17.16+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 stopping instance a625a11b-194e-427a-870f-02fc22c54805
+   2021-01-12T05:08:17.16+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 destroying container for instance a625a11b-194e-427a-870f-02fc22c54805
+   2021-01-12T05:08:17.45+0000 [CELL/0] OUT Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e creating container for instance 7b5819fd-0760-4749-5637-2cbf
+   2021-01-12T05:08:18.06+0000 [CELL/0] OUT Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e successfully created container for instance 7b5819fd-0760-4749-5637-2cbf
+   2021-01-12T05:08:18.87+0000 [CELL/0] OUT Downloading droplet...
+   2021-01-12T05:08:19.05+0000 [STG/0] OUT Cell 7450076b-5364-4fa8-a7ce-cf25ac98b040 successfully destroyed container for instance a625a11b-194e-427a-870f-02fc22c54805
+   2021-01-12T05:08:22.04+0000 [CELL/0] OUT Downloaded droplet (64.1M)
+   2021-01-12T05:08:22.30+0000 [CELL/0] OUT Starting health monitoring of container
+   2021-01-12T05:08:22.68+0000 [APP/PROC/WEB/0] OUT JVM Memory Configuration: -Xmx413310K -Xss1M -XX:ReservedCodeCacheSize=240M -XX:MaxDirectMemorySize=10M -XX:MaxMetaspaceSize=123265K
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT   .   ____          _            __ _ _
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT   '  |____| .__|_| |_|_| |_\__, | / / / /
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT  =========|_|==============|___/=/_/_/_/
+   2021-01-12T05:08:24.25+0000 [APP/PROC/WEB/0] OUT  :: Spring Boot ::        (v2.2.2.RELEASE)
+   2021-01-12T05:08:24.41+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:24.413  INFO 20 --- [           main] pertySourceApplicationContextInitializer : 'cloud' property source added
+   2021-01-12T05:08:24.41+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:24.418  INFO 20 --- [           main] nfigurationApplicationContextInitializer : Reconfiguration enabled
+   2021-01-12T05:08:24.42+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:24.427  INFO 20 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Starting PalTrackerApplication on 7b5819fd-0760-4749-5637-2cbf with PID 20 (/home/vcap/app/BOOT-INF/classes started by vcap in /home/vcap/app)
+   2021-01-12T05:08:24.42+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:24.428  INFO 20 --- [           main] i.p.pal.tracker.PalTrackerApplication    : The following profiles are active: cloud
+   2021-01-12T05:08:25.72+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:25.722  INFO 20 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+   2021-01-12T05:08:25.74+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:25.739  INFO 20 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+   2021-01-12T05:08:25.74+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:25.740  INFO 20 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+   2021-01-12T05:08:25.82+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:25.825  INFO 20 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+   2021-01-12T05:08:25.82+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:25.826  INFO 20 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1338 ms
+   2021-01-12T05:08:26.10+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:26.100  INFO 20 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+   2021-01-12T05:08:26.34+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:26.343  INFO 20 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+   2021-01-12T05:08:26.35+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:08:26.348  INFO 20 --- [           main] i.p.pal.tracker.PalTrackerApplication    : Started PalTrackerApplication in 2.704 seconds (JVM running for 3.656)
+   2021-01-12T05:08:27.15+0000 [CELL/0] OUT Container became healthy
+   2021-01-12T05:09:04.53+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:09:04.535  INFO 20 --- [nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+   2021-01-12T05:09:04.53+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:09:04.535  INFO 20 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+   2021-01-12T05:09:04.54+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:09:04.544  INFO 20 --- [nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+   2021-01-12T05:09:04.60+0000 [RTR/2] OUT pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io - [2021-01-12T05:09:04.492823276Z] "GET / HTTP/1.1" 200 0 24 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0" "35.191.3.132:59216" "10.0.4.55:61034" x_forwarded_for:"13.229.107.94, 35.201.70.53, 35.191.3.132" x_forwarded_proto:"http" vcap_request_id:"a568290a-ca42-43c7-5a77-750e12d30405" response_time:0.109782 gorouter_time:0.000572 app_id:"fb8c6340-5b33-4959-85b9-82edc26199fd" app_index:"0" x_cf_routererror:"-" x_b3_traceid:"e110af2776c9b102" x_b3_spanid:"e110af2776c9b102" x_b3_parentspanid:"-" b3:"e110af2776c9b102-e110af2776c9b102"
+   2021-01-12T05:09:04.60+0000 [RTR/2] OUT
+   2021-01-12T05:09:04.97+0000 [RTR/2] OUT pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io - [2021-01-12T05:09:04.912115211Z] "GET /favicon.ico HTTP/1.1" 404 0 132 "http://pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io/" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0" "35.191.3.141:56093" "10.0.4.55:61034" x_forwarded_for:"13.229.107.94, 35.201.70.53, 35.191.3.141" x_forwarded_proto:"http" vcap_request_id:"bab3e239-a206-45e1-63ff-2fe8b046e46b" response_time:0.062695 gorouter_time:0.000960 app_id:"fb8c6340-5b33-4959-85b9-82edc26199fd" app_index:"0" x_cf_routererror:"-" x_b3_traceid:"a02584bac157f999" x_b3_spanid:"a02584bac157f999" x_b3_parentspanid:"-" b3:"a02584bac157f999-a02584bac157f999"
+   2021-01-12T05:09:04.97+0000 [RTR/2] OUT
+   2021-01-12T05:09:36.02+0000 [RTR/2] OUT pal-tracker-shy-emu-yv.apps.evans.pal.pivotal.io - [2021-01-12T05:09:36.016314242Z] "GET /env HTTP/1.1" 200 0 99 "-" "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:84.0) Gecko/20100101 Firefox/84.0" "35.191.8.0:59417" "10.0.4.55:61034" x_forwarded_for:"13.229.107.94, 35.201.70.53, 35.191.8.0" x_forwarded_proto:"http" vcap_request_id:"64b9ba51-2751-41ce-4a84-5fd1b785c73a" response_time:0.007514 gorouter_time:0.000241 app_id:"fb8c6340-5b33-4959-85b9-82edc26199fd" app_index:"0" x_cf_routererror:"-" x_b3_traceid:"bc76105579c37619" x_b3_spanid:"bc76105579c37619" x_b3_parentspanid:"-" b3:"bc76105579c37619-bc76105579c37619"
+   2021-01-12T05:09:36.02+0000 [RTR/2] OUT
+   2021-01-12T05:12:31.89+0000 [API/0] OUT Deleting app package for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:31.91+0000 [API/0] OUT Deleting app package for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:31.93+0000 [API/0] OUT Deleting app package for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:31.95+0000 [API/0] OUT Deleting app package for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:31.97+0000 [API/0] OUT Deleting app package for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:32.05+0000 [API/0] OUT Deleting droplet for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:32.08+0000 [API/0] OUT Deleting droplet for app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:32.14+0000 [API/0] OUT Deleting process: "web"
+   2021-01-12T05:12:32.23+0000 [CELL/0] OUT Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e stopping instance 7b5819fd-0760-4749-5637-2cbf
+   2021-01-12T05:12:32.24+0000 [API/0] OUT Deleted app with guid fb8c6340-5b33-4959-85b9-82edc26199fd
+   2021-01-12T05:12:37.57+0000 [APP/PROC/WEB/0] OUT 2021-01-12 05:12:37.577  INFO 20 --- [extShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+   2021-01-12T05:12:37.57+0000 [CELL/SSHD/0] OUT Exit status 0
+   2021-01-12T05:12:37.64+0000 [APP/PROC/WEB/0] OUT Exit status 143
+   2021-01-12T05:12:37.74+0000 [CELL/0] OUT Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e destroying container for instance 7b5819fd-0760-4749-5637-2cbf
+   2021-01-12T05:12:37.94+0000 [PROXY/0] OUT Exit status 137
+   2021-01-12T05:12:38.13+0000 [CELL/0] OUT Cell 5a28ec23-8388-4d9f-a47b-3570e5e7fc2e successfully destroyed container for instance 7b5819fd-0760-4749-5637-2cbf
+Failed to retrieve logs from Log Cache: unexpected status code 404
+
+Failed to retrieve logs from Log Cache: unexpected status code 404
+
+Failed to retrieve logs from Log Cache: unexpected status code 404
+
+Failed to retrieve logs from Log Cache: unexpected status code 404
+
+Failed to retrieve logs from Log Cache: unexpected status code 404
+
+ubuntu@ip-172-31-19-163:~$ jps -l
+21312 io.pivotal.pal.tracker.PalTrackerApplication
+6914 com.intellij.idea.Main
+14115 io.pivotal.pal.tracker.backlog.App
+14131 io.pivotal.pal.tracker.allocations.App
+11428 org.gradle.launcher.daemon.bootstrap.GradleDaemon
+14038 org.gradle.wrapper.GradleWrapperMain
+14345 jdk.jcmd/sun.tools.jps.Jps
+14138 io.pivotal.pal.tracker.timesheets.App
+12299 org.gradle.launcher.daemon.bootstrap.GradleDaemon
+19741 org.gradle.launcher.daemon.bootstrap.GradleDaemon
+14126 io.pivotal.pal.tracker.registration.App
+ubuntu@ip-172-31-19-163:~$ curl -v -XPOST -H"Content-Type: application/json" localhost:8083/registration -d'{"name": "Pete"}'
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> POST /registration HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 16
+>
+* upload completely sent off: 16 out of 16 bytes
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:49:09 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"name":"Pete","info":"registration info"}ubuntu@ip-172-31-19-163:~$ curl -v localhost:8083/users/Pete
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> GET /users/Pete HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 400
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:49:35 GMT
+< Connection: close
+<
+* Closing connection 0
+{"timestamp":1610686175699,"status":400,"error":"Bad Request","message":"Failed to convert value of type 'java.lang.String' to required type 'long'; nested exception is java.lang.NumberFormatException: For input string: \"Pete\"","path":"/users/Pete"}ubuntu@ip-172-31-19-163:~$ curl -v localhost:8083/users/1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> GET /users/1 HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:49:51 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"name":"Pete","info":"user info"}ubuntu@ip-172-31-19-163:~$ curl -v localhost:8083/accounts?ownerId=1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> GET /accounts?ownerId=1 HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:50:23 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"ownerId":1,"name":"Pete's account","info":"account info"}]ubuntu@ip-172-31-19-163:~$
+ubuntu@ip-172-31-19-163:~$ curl -v -XPOST -H"Content-Type: application/json" localhost:8083/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": 1}"
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> POST /projects HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 42
+>
+* upload completely sent off: 42 out of 42 bytes
+< HTTP/1.1 201
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:53:00 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"accountId":1,"name":"Basket Weaving","active":true,"info":"project info"}ubuntu@ip-172-31-19-163:~$
+ubuntu@ip-172-31-19-163:~$ curl -v localhost:8083/projects?accountId=1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> GET /projects?accountId=1 HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:53:18 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"accountId":1,"name":"Basket Weaving","active":true,"info":"project info"}]ubuntu@ip-172-31-19-163:~$ curl -v -XPOST -H"Content-Type: application/json"5-05-17\", \"lastDay\": \"2015-05-18\"}"tId\": 1, \"userId\": 1, \"firstDay\": \"2015
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> POST /allocations HTTP/1.1
+> Host: localhost:8081
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 80
+>
+* upload completely sent off: 80 out of 80 bytes
+< HTTP/1.1 201
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:53:59 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"projectId":1,"userId":1,"firstDay":"2015-05-17","lastDay":"2015-05-18","info":"allocation info"}ubuntu@ip-172-31-19-163:~$
+ubuntu@ip-172-31-19-163:~$ curl -v localhost:8081/allocations?projectId=1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8081 (#0)
+> GET /allocations?projectId=1 HTTP/1.1
+> Host: localhost:8081
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:54:24 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"projectId":1,"userId":1,"firstDay":"2015-05-17","lastDay":"2015-05-18","info":"allocation info"}]ubuntu@ip-172-31-19-163:~$ curl -v -XPOST -H"Content-Type: application/json" localhost:8082/stories -d"{\"projectId\": 1, \"name\": \"Find some reeds\"}"
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8082 (#0)
+> POST /stories HTTP/1.1
+> Host: localhost:8082
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 43
+>
+* upload completely sent off: 43 out of 43 bytes
+< HTTP/1.1 201
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:55:02 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"projectId":1,"name":"Find some reeds","info":"story info"}ubuntu@ip-172-31-19-163:~$
+ubuntu@ip-172-31-19-163:~$ curl -v localhost:8082/stories?projectId=1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8082 (#0)
+> GET /stories?projectId=1 HTTP/1.1
+> Host: localhost:8082
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:55:18 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"projectId":1,"name":"Find some reeds","info":"story info"}]ubuntu@ip-172-31-19-163:~$ curl -v -XPOST -H"Content-Type: application/json" localhost:808405-17\", \"hours\": 6}"ojectId\": 1, \"userId\": 1, \"date\": \"2015-0
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8084 (#0)
+> POST /time-entries/ HTTP/1.1
+> Host: localhost:8084
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 63
+>
+* upload completely sent off: 63 out of 63 bytes
+< HTTP/1.1 201
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:55:42 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"projectId":1,"userId":1,"date":"2015-05-17","hours":6,"info":"time entry info"}ubuntu@ip-172-31-19-163:~$
+ubuntu@ip-172-31-19-163:~$ curl -v localhost:8084/time-entries?userId=1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8084 (#0)
+> GET /time-entries?userId=1 HTTP/1.1
+> Host: localhost:8084
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 04:56:06 GMT
+<
+* Connection #0 to host localhost left intact
+[{"id":1,"projectId":1,"userId":1,"date":"2015-05-17","hours":6,"info":"time entry info"}]ubuntu@ip-172-31-19-163:~$ git cherry-pick pipeline
+fatal: not a git repository (or any of the parent directories): .git
+ubuntu@ip-172-31-19-163:~$ pwd
+/home/ubuntu
+ubuntu@ip-172-31-19-163:~$ cd workspace/pal-tracker-distributed/
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ git cherry-pick pipeline
+[master b50a3e6] Add pipeline
+ Author: Bill Kable <bkable@gmail.com>
+ Date: Wed Feb 5 11:40:33 2020 -0600
+ 1 file changed, 183 insertions(+)
+ create mode 100644 .github/workflows/pipeline.yml
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ cf services
+Getting services in org vp145.ntrs.com / space sandbox as vp145@ntrs.com...
+
+name                            service   plan       bound apps    last operation     broker                   upgrade available
+tracker-allocations-database    p.mysql   db-small                 create succeeded   dedicated-mysql-broker   no
+tracker-backlog-database        p.mysql   db-small                 create succeeded   dedicated-mysql-broker   no
+tracker-database                p.mysql   db-small   pal-tracker   create succeeded   dedicated-mysql-broker   no
+tracker-registration-database   p.mysql   db-small                 create succeeded   dedicated-mysql-broker   no
+tracker-timesheets-database     p.mysql   db-small                 create succeeded   dedicated-mysql-broker   no
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ git status
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   manifest-allocations.yml
+	modified:   manifest-backlog.yml
+	modified:   manifest-registration.yml
+	modified:   manifest-timesheets.yml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	pal-tracker-distributed-codebase.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ git add .
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ git commit -m "distributedChanges"
+[master 43b6da9] distributedChanges
+ 5 files changed, 8 insertions(+), 7 deletions(-)
+ create mode 100644 pal-tracker-distributed-codebase.txt
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ git push
+Counting objects: 12, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (8/8), done.
+Writing objects: 100% (12/12), 2.05 KiB | 2.05 MiB/s, done.
+Total 12 (delta 6), reused 4 (delta 1)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/vishwajeetdpatil/pal-tracker-distributed.git
+   89a5144..43b6da9  master -> master
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ cf target
+api endpoint:   https://api.sys.evans.pal.pivotal.io
+api version:    2.150.0
+user:           vp145@ntrs.com
+org:            vp145.ntrs.com
+space:          sandbox
+ubuntu@ip-172-31-19-163:~/workspace/pal-tracker-distributed$ cd ~/workspace/assignment-submission
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperDistributedSystemDeployment \
+>
+Starting a Gradle Daemon (subsequent builds will be faster)
+> Task :cloudNativeDeveloperDistributedSystemDeployment FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':cloudNativeDeveloperDistributedSystemDeployment'.
+> Need project property `registrationServerUrl`, use command line argument "-PregistrationServerUrl=someValue"
+
+* Try:
+Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+* Get more help at https://help.gradle.org
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD FAILED in 6s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ ./gradlew cloudNativeDeveloperDistributedSystemDeployment -PregistrationServerUrl=http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io -PbacklogServerUrl=http://backlog-pal-tracker-vp145.apps.evans.pal.pivotal.io  -PallocationsServerUrl=http://allocations-pal-tracker-vp145.apps.evans.pal.pivotal.io -PtimesheetsServerUrl=http://timesheets-pal-tracker-vp145.apps.evans.pal.pivotal.io
+
+> Task :cloudNativeDeveloperDistributedSystemDeployment
+
+Starting assignment...
+
+POST http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/registration
+GET http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/accounts?ownerId=1
+POST http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/projects
+POST http://allocations-pal-tracker-vp145.apps.evans.pal.pivotal.io/allocations
+POST http://backlog-pal-tracker-vp145.apps.evans.pal.pivotal.io/stories
+POST http://timesheets-pal-tracker-vp145.apps.evans.pal.pivotal.io/time-entries
+
+Assignment was successful.
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 7.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/6.5.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 7s
+1 actionable task: 1 executed
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v -XPOST -H"Content-Type: application/json" http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/registration -d'{"name": "Pete"}'
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> POST /registration HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 16
+>
+* upload completely sent off: 16 out of 16 bytes
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:07:22 GMT
+< X-Vcap-Request-Id: 7425cc19-6029-43a2-472d-f7cd247ddd99
+< Content-Length: 49
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":2,"name":"Pete","info":"registration info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v localhost:8083/users/1
+*   Trying 127.0.0.1...
+* TCP_NODELAY set
+* Connected to localhost (127.0.0.1) port 8083 (#0)
+> GET /users/1 HTTP/1.1
+> Host: localhost:8083
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200
+< Content-Type: application/json;charset=UTF-8
+< Transfer-Encoding: chunked
+< Date: Fri, 15 Jan 2021 06:07:48 GMT
+<
+* Connection #0 to host localhost left intact
+{"id":1,"name":"Pete","info":"user info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/users/1
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /users/1 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:09:02 GMT
+< X-Vcap-Request-Id: 660f303d-d970-48a0-48a3-4998851f19ee
+< Content-Length: 87
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":1,"name":"Iam A. Tester 14b808de-84e1-4357-b405-58d082a2ff62","info":"user info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v -XPOSTl.pivotal.io/registration -d'{"name": "Peter"}'stration-pal-tracker-vp145.apps.evans.pal
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> POST /registration HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 17
+>
+* upload completely sent off: 17 out of 17 bytes
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:09:43 GMT
+< X-Vcap-Request-Id: 6ffb2700-ba89-46a5-6bfa-d63fa7bc9340
+< Content-Length: 50
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":3,"name":"Peter","info":"registration info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/users/1
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /users/1 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:03 GMT
+< X-Vcap-Request-Id: 24559443-c3ef-4e8b-7b4d-9c5f13f761a6
+< Content-Length: 87
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":1,"name":"Iam A. Tester 14b808de-84e1-4357-b405-58d082a2ff62","info":"user info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/users/2
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /users/2 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:09 GMT
+< X-Vcap-Request-Id: 9c0f3d9a-468e-49fd-5d12-c7f330b0b462
+< Content-Length: 41
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":2,"name":"Pete","info":"user info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/users/3
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /users/3 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:17 GMT
+< X-Vcap-Request-Id: 8bd831fc-396b-4131-6f60-c12d76ce1026
+< Content-Length: 42
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":3,"name":"Peter","info":"user info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/accounts?ownerId=1
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /accounts?ownerId=1 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:45 GMT
+< X-Vcap-Request-Id: 8ac696dc-78e5-4ce0-4692-12feed3123cd
+< Content-Length: 114
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+[{"id":1,"ownerId":1,"name":"Iam A. Tester 14b808de-84e1-4357-b405-58d082a2ff62's account","info":"account info"}]ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/accounts?ownerId=2
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /accounts?ownerId=2 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:51 GMT
+< X-Vcap-Request-Id: 4d6b916a-8c14-4a06-67de-42d1687dc6ce
+< Content-Length: 68
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+[{"id":2,"ownerId":2,"name":"Pete's account","info":"account info"}]ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/accounts?ownerId=3
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /accounts?ownerId=3 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:10:57 GMT
+< X-Vcap-Request-Id: b3e1f5c2-cc35-4eca-650d-a005b6b976f5
+< Content-Length: 69
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+[{"id":3,"ownerId":3,"name":"Peter's account","info":"account info"}]ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v -XPOST -H"Content-Type: l.pivotal.io/projects -d"{\"name\": \"Basket Weaving\", \"accountId\": 1}"
+Note: Unnecessary use of -X or --request, POST is already inferred.
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> POST /projects HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+> Content-Type: application/json
+> Content-Length: 42
+>
+* upload completely sent off: 42 out of 42 bytes
+< HTTP/1.1 201 Created
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:11:22 GMT
+< X-Vcap-Request-Id: bcb50f05-8f92-4a7d-5c13-66108d80e0d9
+< Content-Length: 82
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+{"id":2,"accountId":1,"name":"Basket Weaving","active":true,"info":"project info"}ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io:8083/projects?accountId=1
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* connect to 35.201.70.53 port 8083 failed: Connection timed out
+* Failed to connect to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io port 8083: Connection timed out
+* Closing connection 0
+curl: (7) Failed to connect to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io port 8083: Connection timed out
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ curl -v http://registration-pal-tracker-vp145.apps.evans.pal.pivotal.io/projects?accountId=1
+*   Trying 35.201.70.53...
+* TCP_NODELAY set
+* Connected to registration-pal-tracker-vp145.apps.evans.pal.pivotal.io (35.201.70.53) port 80 (#0)
+> GET /projects?accountId=1 HTTP/1.1
+> Host: registration-pal-tracker-vp145.apps.evans.pal.pivotal.io
+> User-Agent: curl/7.58.0
+> Accept: */*
+>
+< HTTP/1.1 200 OK
+< Content-Type: application/json;charset=UTF-8
+< Date: Fri, 15 Jan 2021 06:29:07 GMT
+< X-Vcap-Request-Id: 103e6272-76ee-4b49-5e90-31eed5dae6c3
+< Content-Length: 202
+< Via: 1.1 google
+<
+* Connection #0 to host registration-pal-tracker-vp145.apps.evans.pal.pivotal.io left intact
+[{"id":2,"accountId":1,"name":"Basket Weaving","active":true,"info":"project info"},{"id":1,"accountId":1,"name":"Test Project 14b808de-84e1-4357-b405-58d082a2ff62","active":true,"info":"project info"}]ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$ cf env pal-tracker-distributed
+FAILED
+App pal-tracker-distributed not found
+ubuntu@ip-172-31-19-163:~/workspace/assignment-submission$
